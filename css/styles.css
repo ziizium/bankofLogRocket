@@ -85,6 +85,7 @@ textarea {
 
 .header__form {
 	display: flex;
+	flex-basis: auto;
 	margin-top: 1.2em;
 	margin-bottom: 1.2em;
 }
