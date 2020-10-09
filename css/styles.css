@@ -83,6 +83,28 @@ textarea {
 	transition: 0.3s ease color;
 }
 
+.site-settings > ul li:nth-child(2),
+.header__form-label {
+	margin-left: auto;
+}
+
+@media screen and (min-width: 48em) {
+	.site-settings form + ul {
+		display: block;
+	}
+	.site-settings {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0;
+	}
+	.site-settings ul li,
+	.site-settings form select,
+	.site-settings form label {
+		margin-right: 1.5em;
+	}
+}
+
 .header__search-form {
 	padding: 0.5em;
 }
@@ -99,11 +121,6 @@ textarea {
 	.header__search-form {
 		width: 30%;
 	}
-}
-
-.site-settings > ul li:nth-child(2),
-.header__form-label {
-	margin-left: auto;
 }
 
 .header__form {
@@ -338,23 +355,6 @@ main a {
 		padding: 0.6em;
 	}
 
-	.site-settings form + ul {
-		display: block;
-	}
-	.site-settings form {
-		margin-top: initial;
-	}
-	.site-settings {
-		display: flex;
-		justify-content: flex-end;
-		align-items: baseline;
-	}
-	.site-settings ul li,
-	.site-settings form select,
-	.site-settings form label {
-		margin-right: 1.5em;
-	}
-
 	.container {
 		width: 60%;
 		margin: 0 auto;
@@ -530,16 +530,13 @@ main a {
 .show-desktop {
 	display: none;
 }
-.contact-numbers ul li {
-	font-family: "Catamaran-Bold";
-	text-transform: uppercase;
-}
 
 @media screen and (min-width: 48em) {
 
 	.show-desktop {
-		display: initial;
+		display: block;
 	}
+
 	.site-resources {
 		display: flex;
 		justify-content: space-between;
@@ -547,23 +544,11 @@ main a {
 		margin-right: 0.5em;
 	}
 
-	.contact-numbers {
-		display: flex;
-		padding: 1.2em;
-		align-items: center;
-		color: #575757;
-	}
-	.contact-numbers ul li {
-		display: inline;
-		margin-left: 1.2em;
-	}
-
 }
 
 .form__row {
 	margin-bottom: 1.2em;
 }
-
 .form__label {
 	display: block;
 	width: 100%;
@@ -571,36 +556,29 @@ main a {
 	margin-bottom: 0.5em;
 	letter-spacing: 0.1em;
 }
-
 .form__label span {
 	margin-left: 0.5em;
 }
-
 .form__input,
 .form__textarea {
 	width: 100%;
 	padding: 0.7em;
 	font-size: 1.1em;
 }
-
 .form__input:focus {
 	outline: 1px solid #764abc;
 	box-shadow: -2px 2px #575757;
 	transition: 0.5s ease all;
 }
-
 .form__textarea {
 	height: 20vh;
 }
-
 .form fieldset {
 	border: 1px solid #575757;
 }
-
 .form legend {
 	margin-left: 0.4em;
 }
-
 .form input[type="submit"] {
 	width: 100%;
 	padding: 1.2em;
@@ -610,14 +588,12 @@ main a {
 	border-radius: 25px;
 	font-size: 1em;
 }
-
 .form input[type="submit"]:hover,
 .form input[type="submit"]:focus {
 	background-color: #764abc;
 	color: #fff;
 	transition: 0.3s ease background-color;
 }
-
 .form .response {
 	padding: 0.7em;
 	cursor: pointer;
@@ -816,20 +792,18 @@ and also iPads specifically.
   .noJS-version tr { 
     display: block; 
   }
-
   .noJS-version caption {
     display: initial; /* bulls eye */
   }
-  
   /* Hide table headers (but not display: none;, for accessibility) */
   .noJS-version thead tr { 
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  
-  .noJS-version tr { border: 1px solid #ccc; }
-  
+  .noJS-version tr {
+  	border: 1px solid #ccc;
+  }
   .noJS-version td { 
     /* Behave  like a "row" */
     border: none;
@@ -837,7 +811,6 @@ and also iPads specifically.
     position: relative;
     padding-left: 50%; 
   }
-  
   .noJS-version td:before { 
     /* Now like a table header */
     position: absolute;
@@ -866,7 +839,6 @@ footer {
 	padding: 1em;
 	color: #575757;
 }
-
 .footer__column {
 	margin-bottom: 1.2em;
 	text-align: center;
