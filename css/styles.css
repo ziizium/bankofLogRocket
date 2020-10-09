@@ -83,6 +83,12 @@ textarea {
 	transition: 0.3s ease color;
 }
 
+.header__form {
+	display: flex;
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+}
+
 .site-settings > ul li:nth-child(2),
 .header__form-label {
 	margin-left: auto;
@@ -123,11 +129,6 @@ textarea {
 	}
 }
 
-.header__form {
-	margin-top: 1.2em;
-	margin-bottom: 1.2em;
-	display: flex;
-}
 .header__form + ul {
 	display: flex;
 	justify-content: center;
