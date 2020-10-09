@@ -9,7 +9,7 @@ checkbox.addEventListener("change", function () {
 	invertor.textContent = invertor.textContent.trim();
 });
 
-if (document.getElementById) {
+if (document.getElementById()) {
 	if (
 		checkbox.hasAttribute("disabled") &&
 		themerLabel.hasAttribute("data-state") &&
