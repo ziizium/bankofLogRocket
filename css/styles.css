@@ -84,9 +84,9 @@ textarea {
 }
 
 .header__form {
-	display: flex;
+	/*display: flex;
 	margin-top: 1.2em;
-	margin-bottom: 1.2em;
+	margin-bottom: 1.2em;*/
 }
 
 .site-settings > ul li:nth-child(2),
