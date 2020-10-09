@@ -9,11 +9,13 @@ checkbox.addEventListener("change", function () {
 	invertor.textContent = invertor.textContent.trim();
 });
 
-if (
-	checkbox.hasAttribute("disabled") &&
-	themerLabel.hasAttribute("data-state") &&
-	themerLabel.getAttribute("data-state") === "disabled"
-) {
-	checkbox.removeAttribute("disabled");
-	themerLabel.removeAttribute("data-state");
+if (document.getElementById) {
+	if (
+		checkbox.hasAttribute("disabled") &&
+		themerLabel.hasAttribute("data-state") &&
+		themerLabel.getAttribute("data-state") === "disabled"
+	) {
+		checkbox.removeAttribute("disabled");
+		themerLabel.removeAttribute("data-state");
+	}
 }
