@@ -90,7 +90,7 @@ textarea {
 }
 
 .header__form * {
-	height: 43px;
+	height: auto;
 }
 
 .site-settings > ul li:nth-child(2),
