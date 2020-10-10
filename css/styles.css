@@ -85,9 +85,12 @@ textarea {
 
 .header__form {
 	display: flex;
-	flex-basis: auto;
 	margin-top: 1.2em;
 	margin-bottom: 1.2em;
+}
+
+.header__form * {
+	height: 43px;
 }
 
 .site-settings > ul li:nth-child(2),
