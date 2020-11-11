@@ -830,11 +830,9 @@ and also iPads specifically.
   /*
   Label the data
   */
-  .noJS-version td:nth-of-type(1):before { content: "Author"; }
-  .noJS-version td:nth-of-type(2):before { content: "Title"; }
-  .noJS-version td:nth-of-type(3):before { content: "Year"; }
-  .noJS-version td:nth-of-type(4):before { content: "ISBN-13"; }
-  .noJS-version td:nth-of-type(5):before { content: "ISBN-10"; }
+  .noJS-version td:nth-of-type(1):before { content: "US Dollar"; }
+  .noJS-version td:nth-of-type(2):before { content: "1.00 USD"; }
+  .noJS-version td:nth-of-type(3):before { content: "inv. 1.00 USD"; }
 }
 
 /* End of Table styles */
